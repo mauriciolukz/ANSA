@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Codigo:"
+        android:id="@+id/textView14"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ubicacion:"
+        android:id="@+id/textView15"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_alignTop="@+id/txtubicaciontrx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Solicitado:"
+        android:id="@+id/textView16"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/txtcodigotrx"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/txtubicaciontrx"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/txtcodigotrx"
+        android:layout_alignLeft="@+id/txtsolicitadotrx"
+        android:layout_alignStart="@+id/txtsolicitadotrx"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/txtsolicitadotrx"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/txtubicaciontrx"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descripcion"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/txtdesctrx"
+        android:layout_above="@+id/textView15"
+        android:layout_alignLeft="@+id/txtcodigotrx"
+        android:layout_alignStart="@+id/txtcodigotrx"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Destino:"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/txtdestinotrx"
+        android:layout_below="@+id/txtsolicitadotrx"
+        android:layout_alignLeft="@+id/txtsolicitadotrx"
+        android:layout_alignStart="@+id/txtsolicitadotrx"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+</RelativeLayout>

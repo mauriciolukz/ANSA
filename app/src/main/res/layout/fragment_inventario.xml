@@ -1,0 +1,446 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.autonica.moviles.ansa.FragmentInventario">
+    <!--ETIQUETAS PASILLO,COLUMNA,CLASE,ITEM,DESCRIPCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="5">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASILLO"
+                android:id="@+id/textView"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLUMNA"
+                android:id="@+id/textView2"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLASE"
+                android:id="@+id/textView88888"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITEM"
+                android:id="@+id/textView666"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPCION"
+                android:id="@+id/textView999999999"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--CONTROLES PASILLO,COLUMNA,CLASE,ITEM,DESCRIPCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="5">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:layout_weight="1"
+                android:id="@+id/txtpasillo"><requestFocus/></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:layout_weight="1"
+                android:id="@+id/txtcolumna"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/txtclase"
+                android:background="#cbfbf8"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:layout_weight="1"
+                android:id="@+id/txtitem"><requestFocus/></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:layout_weight="1"
+                android:id="@+id/txtdescripcioninventarioID"><requestFocus/></EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <!--ETIQUETAS CODIGO,UBICACION,SCAN,EXISTENCIA-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="4">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CODIGO"
+                android:id="@+id/textView3"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPCION"
+                android:id="@+id/textView4"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UBICACION"
+                android:id="@+id/textView5"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANT SCAN"
+                android:id="@+id/textView6"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--CONTROLES CODIGO Y UBICACION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="4">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:id="@+id/txtcodigoinvent"><requestFocus/></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/numero"
+                android:ems="10"
+                android:id="@+id/txtdescinvent"
+                android:editable="false"
+                android:enabled="false"
+                android:textColor="@color/bright_foreground_inverse_material_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:id="@+id/txtubicinvent"
+                android:layout_weight="1"
+                android:textColor="@color/bright_foreground_inverse_material_dark"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/barcode"
+                android:id="@+id/txtexistinventscan"
+                android:editable="false"
+                android:enabled="false"
+                android:text="0"
+                android:textColor="@color/bright_foreground_inverse_material_dark"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <!--ETIQUETAS QTY Y CANTIDAD-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="4">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CODIGO EN UBICACION"
+                android:id="@+id/textView7"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXISTENCIA"
+                android:id="@+id/textView8"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESERVADO"
+                android:id="@+id/textView9"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:id="@+id/textView10"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--CONTROLES QTY Y CANTIDAD-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="4">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:editable="false"
+                android:enabled="false"
+                android:drawableLeft="@mipmap/barcode"
+                android:id="@+id/txtcodigoinventactual"
+                android:textColor="@color/bright_foreground_inverse_material_dark"><requestFocus/></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/numero"
+                android:ems="10"
+                android:id="@+id/txtexistinvent"
+                android:editable="false"
+                android:enabled="false"
+                android:text="0"
+                android:textColor="@color/bright_foreground_inverse_material_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/numero"
+                android:ems="10"
+                android:id="@+id/txtreserinvent"
+                android:enabled="false"
+                android:editable="false"
+                android:layout_weight="0.50"
+                android:text="0"
+                android:textColor="@color/bright_foreground_inverse_material_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/numero"
+                android:ems="10"
+                android:id="@+id/txttotalinvent"
+                android:enabled="false"
+                android:editable="false"
+                android:layout_weight="0.50"
+                android:text="0"
+                android:textColor="@color/bright_foreground_inverse_material_dark" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--ETIQUETAS DE CONTADOR CODIGOS-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:id="@+id/textView11"
+                android:textColor="#516bfa" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De "
+                android:id="@+id/textView12"
+                android:textColor="#516bfa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/textView13"
+                android:textColor="#516bfa" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:id="@+id/btnlimpiar"
+                android:layout_weight="1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subir"
+                android:id="@+id/btnsubir"
+                android:layout_weight="1" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refrescar"
+                android:id="@+id/btnrefrescar"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROL LISTWIEW-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstcodigosinvent"
+            android:background="#dce7fc" />
+    </LinearLayout>
+</LinearLayout>

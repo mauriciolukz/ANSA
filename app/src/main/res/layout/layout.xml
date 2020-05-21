@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/stat_sys_upload_done"
+        android:layout_weight="0.17"
+        android:background="#f93131"
+        android:layout_alignBottom="@+id/lotetrxs"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/ivtfrtrxs"
+        android:layout_gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/lotetrxs"
+        android:layout_below="@+id/ivtfrtrxs"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/trxs"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivtfrtrxs"
+        android:layout_toEndOf="@+id/ivtfrtrxs"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+</RelativeLayout>

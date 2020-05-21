@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.autonica.moviles.ansa.FragmentUbicaCaja">
+        <!--ETIQUETAS FACTURA Y PROVEEDOR-->
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_proveedor"
+                    android:id="@+id/textView"
+                    android:textColor="#516bfa" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_factura"
+                    android:id="@+id/textView2"
+                    android:textColor="#516bfa" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--CONTROLES FACTURA Y PROVEEDOR-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:weightSum="3">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1.5">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmbproveedorcaja"
+                    android:background="#cbfbf8"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1.5">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmbfacturacaja"
+                    android:layout_weight="1"
+                    android:background="#cbfbf8"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--ETIQUETAS CAJA-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:weightSum="2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_caja"
+                    android:id="@+id/textView3"
+                    android:textColor="#516bfa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1">
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--CONTROLES CAJA Y BOTONCAJA-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:weightSum="3">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1.5">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:drawableLeft="@mipmap/barcode"
+                    android:id="@+id/txtcodigocaja"
+                    android:background="#fc5858"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1.5">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_btncaja"
+                    android:id="@+id/btncajas"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--ETIQUETAS DE CONTADOR BULTOS-->
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:id="@+id/lbcontadorcaja"
+                android:textColor="#516bfa" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De "
+                android:id="@+id/lbdecaja"
+                android:textColor="#516bfa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/lbtotalcaja"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+        <!--CONTROL LISTA CAJAS-->
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstcajas"
+            android:background="#dce7fc" />
+    </LinearLayout>
+</LinearLayout>

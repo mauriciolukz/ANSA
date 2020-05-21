@@ -1,0 +1,327 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.autonica.moviles.ansa.ActivityUbicaCodigo">
+    <!--ETIQUETA CODIGO / UBICACION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_codigocambioubicacion"
+                android:id="@+id/textView"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROL CODIGO / UBICACION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="3">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableLeft="@mipmap/ubicacion"
+            android:ems="10"
+            android:id="@+id/txtcodigocambio"
+            android:background="#fc5858"
+            ><requestFocus/></EditText>
+
+    </LinearLayout>
+    <!--ETIQUETAS UBICACIONVIEJA Y DIMENCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_ubicacionVieja"
+                android:id="@+id/textView2"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_codigocambioubicaciondimenciones"
+                android:id="@+id/textView3"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROL UBICACIONVIEJA Y DIMENCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/ubicacion"
+                android:ems="10"
+                android:id="@+id/txtubicviejacambio"
+                android:editable="true"
+                android:enabled="false"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:drawableLeft="@mipmap/cajaabierta"
+                android:id="@+id/txtdimenviejacambio"
+                android:editable="true"
+                android:enabled="false"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--ETIQUETA CODIGO Y EXISTENCIA-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_codigo"
+                android:id="@+id/textView4"
+                android:textColor="#516bfa"
+                android:editable="true"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_existencia"
+                android:id="@+id/textView5"
+                android:textColor="#516bfa"
+                android:phoneNumber="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROL CODIGO Y EXISTENCIA-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/numero"
+                android:ems="10"
+                android:editable="false"
+                android:enabled="false"
+                android:id="@+id/txtcodigo2cambio"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/ubicacion"
+                android:ems="10"
+                android:id="@+id/txtexistenciacambio"
+                android:editable="true"
+                android:enabled="false"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--ETIQUETAS UBICACIONNUEVA Y DIMENCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_ubicacionNueva"
+                android:id="@+id/textView6"
+                android:textColor="#516bfa"
+                android:phoneNumber="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_codigocambioubicaciondimenciones"
+                android:id="@+id/textView7"
+                android:textColor="#516bfa"
+                android:phoneNumber="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROL UBICACIONNUEVA Y DIMENCION-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/ubicacion"
+                android:ems="10"
+                android:id="@+id/txtubicanuevacambio"
+                android:editable="true"
+                android:enabled="false"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableLeft="@mipmap/ubicacion"
+                android:ems="10"
+                android:id="@+id/txtdimennuevacambio"
+                android:editable="true"
+                android:enabled="false"
+                android:textColor="@color/abc_search_url_text_pressed" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--ETIQUETAS PASILLO Y UBICACIONES-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasillo"
+                android:id="@+id/textView8"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion sugerida"
+                android:id="@+id/textView9"
+                android:textColor="#516bfa" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROLES PASILLO Y UBICACIONES-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:weightSum="3">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbpasillosubica"
+                android:background="#cbfbf8"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1.5">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbsugerido"
+                android:layout_weight="1"
+                android:background="#cbfbf8"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--CONTROLES PASILLO Y UBICACIONES-->
+    <!--CONTROL LISTA CAJAS-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+</LinearLayout>

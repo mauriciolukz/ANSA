@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">ANSA MOVILES</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Usuario Invalido</string>
+    <string name="error_invalid_password">Contraseña muy corta</string>
+    <string name="error_incorrect_password">Contraseña Incorrecta</string>
+    <string name="error_field_required">Campo Requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings related to MDI Draw -->
+    <string name="title_activity_mdi">ANSA PRINCIPAL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="app_name_corporation">AUTONICA S,A</string>
+
+    <!-- Strings related to Fragmentoubicacaja -->
+    <string name="name_proveedor">Proveedor</string>
+    <string name="name_factura">Factura</string>
+    <string name="name_caja">Caja</string>
+    <string name="name_btncaja">Buscar Cajas</string>
+
+    <!-- Strings related to Actividadubicacodigo -->
+    <string name="name_codigo">Codigo</string>
+    <string name="name_qty">QTY</string>
+    <string name="name_desc">Desc</string>
+    <string name="name_si">Si</string>
+    <string name="name_no">No</string>
+    <string name="name_cantidad">Cantidad</string>
+    <string name="name_cbrecibir">Todo</string>
+    <string name="name_btncodigo">Buscar codigos</string>
+
+
+    <!-- Strings related to Actividadubicacodigo -->
+    <string name="title_activity_activity_ubica_ubica">Ubicar Codigo</string>
+    <string name="name_codigosubicados">Codigos Ubicados</string>
+    <string name="name_existencia">Existencia</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Strings related to ActividadCambioUbicacion -->
+    <string name="name_codigocambioubicacion">Codigo/Ubicacion</string>
+    <string name="name_codigocambioubicacion2">Codigo y Ubicacion</string>
+    <string name="name_codigocambioubicaciondimenciones">Dimencion</string>
+    <string name="name_ubicacionNueva">Ubicacion Nueva</string>
+    <string name="name_ubicacionVieja">Ubicacion Vieja</string>
+    <string name="name_sugerenciaCambio">Sugerencia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
